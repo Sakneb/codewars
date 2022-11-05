@@ -31,6 +31,7 @@ function squareSum(numbers) {
 function noSpace(x) {
   return x.replace(/ /g, "");
 }
+
 function noSpace(x) {
   return x.split(" ").join("");
 }
@@ -60,3 +61,51 @@ var summation = function (num) {
 // Given [34, 15, 88, 2] your solution will return 2
 // Given [34, -345, -1, 100] your solution will return -345
 // You can assume, for the purpose of this kata, that the supplied array will not be empty.
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+}
+
+let cars = [
+  {
+    year: 2000,
+    model: "BMW",
+    color: "grey",
+  },
+  {
+    year: 2001,
+    model: "BMW1",
+    color: "black",
+  },
+  {
+    year: 2002,
+    model: "BMW2",
+    color: "white",
+  },
+  {
+    year: 2003,
+    model: "BMW3",
+    color: "red",
+  },
+];
+
+const arrFunc = (x) => {
+  console.log(...x);
+  console.log(Math.max(...x).toString().length);
+};
+
+function arrFunction(x) {
+  let maxNumber = 0;
+  for (let i = 0; i < x.length; i++) {
+    if (maxNumber < x[i]) {
+      maxNumber = x[i];
+    }
+  }
+  console.log(maxNumber.toString().length);
+}
+
+arrFunction([1, 234, 45678, 222345, 56]);
+
+let num = 0;
